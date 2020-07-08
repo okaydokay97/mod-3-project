@@ -54,7 +54,6 @@ body {
   border-radius: 100%;
   outline: none;
   float: center;
-  border-style: groove;
   border-color: rgb(199, 159, 165);
   box-shadow: -3px 5px 5px #999;
   position: absolute;
