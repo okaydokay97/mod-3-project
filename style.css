@@ -6,6 +6,15 @@
   font-variant: small-caps;
 }
 
+#user-login {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.create-account {
+  text-align: center;
+}
+
 #user-profile-button {
   width: 150px;
   height: 40px;
@@ -30,6 +39,10 @@
   transform: translateY(2px);
 }
 
+#img {
+  padding-top: 10px;
+}
+
 #card {
   margin: auto;
   text-align: center;
@@ -38,7 +51,27 @@
   transition: 0.3s;
   background-color: white;
   border-radius: 12px;
-  
+}
+
+.match-card {
+  background-color: white;
+  width: 160px;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
+#match-info {
+  border-radius: 100%;
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  border-color: gainsboro;
+  outline: none;
+  border-style: groove;
 }
 
 body {
@@ -46,7 +79,7 @@ body {
 }
 
 #like {
-  background-color: rgb(230, 183, 191);
+  background-color: pink;
   height: 100px;
   width: 100px;
   font-size: 500%;
@@ -54,12 +87,24 @@ body {
   border-radius: 100%;
   outline: none;
   float: center;
-  border-color: rgb(199, 159, 165);
+  border-color: rgba(220, 160, 170, 0.612);
   box-shadow: -3px 5px 5px #999;
+  border-style: groove;
   position: absolute;
   margin: 0;
   left: 54%;
-  top: 63.5%;
+  top: 70%;
+  cursor: pointer;
+}
+
+#like:hover {
+  background-color: rgb(227, 194, 199);
+}
+
+#like:active {
+  background-color: rgb(205, 165, 172);
+  box-shadow: -3 3px 2px #666;
+  transform: translateY(2px);
 }
 
 #dislike {
@@ -69,17 +114,28 @@ body {
   font-size: 500%;
   border-radius: 100%;
   outline: none;
+  border-style: groove;
   box-shadow: -3px 5px 5px #999;
   position: absolute;
   left: 40.5%;
-  top: 63.5%;
+  top: 70%;
+  cursor: pointer;
+}
+#dislike:hover {
+  background-color: rgba(123, 72, 72, 0.865);
+}
+
+#dislike:active{
+  background-color: rgba(104, 62, 62, 0.865);
+  box-shadow: -3 3px 2px #666;
+  transform: translateY(2px);
 }
 
 #match-area{
   text-align: center;
   font-family: cursive;
   font-variant: small-caps;
-  font-size: 200%;
+  font-size: 450%;
   -webkit-text-fill-color: orange;
   -webkit-text-stroke-width: .01px;
   -webkit-text-stroke-color: rgba(50, 23, 3, 0.79);

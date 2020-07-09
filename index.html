@@ -3,26 +3,57 @@
   <head>
     <title>Hot or Not</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="./src/rubens.js"></script>
   </head>
   <body>
-    <script defer src="./src/rubens.js"></script>
-    <div>
+    <div class= "top-bar">
     <h1 id="site-name">Hot or Not</h1>
+    <div class="sign-in">
+      <form id="user-login">
+        <h2>Sign In</h2>
+        <input type="text" name="name" value="" placeholder="Please Enter Your Name" class="input-text"/>
+        <br><br>
+        <input type="submit" name="submit" value="Login" class="submit"/>
+      </form>
+    </div>
+   
+    <br><br>
+    <div class="create-account">
+      <form id="new-account">
+        <h3 style="text-align: center;">OR...</h3><br><br>
+        <h2>Create Account</h2>
+        <input type="text" name="name" value="" placeholder="Name" class="create-input-text"/><br><br>
+        <input type="text" name="email" value="" placeholder="Email" class="create-input-text"/><br><br>
+        <input type="text" name="bio" value="" placeholder="Quote" class="create-input-text"/><br><br>
+        <input type="text" name="gender" value="" placeholder="Gender" class="create-input-text"/><br><br>
+        <input type="text" name="age" value="" placeholder="Age" class="create-input-text"/><br><br>
+        <input type="text" name="img_url" value="" placeholder="Image URL" class="create-input-text"/><br><br>
+        <input type="submit" name="submit" value="Create Account" class="submit" id="create-account-submit"/>
+      </form>
+    </div>
     <button id="user-profile-button">Your Profile</button>
     </div>
     <div>
       <div id="card">
-        <img src= "https://fcw.com/-/media/GIG/FCWNow/Topics/Concepts/smiley.png" height="240" width="240">
-        <h2><b>Jenifer</b></h2>
+        <!-- <img id='img' src= "https://fcw.com/-/media/GIG/FCWNow/Topics/Concepts/smiley.png" height="240" width="240"> -->
+        <!-- <h2><b>Jennifer</b></h2>
         <p>27 Years Old</p>
-        <em>"Hey, what's your name? Paul? Check this out Paul."</em>
+        <em>"Hey, what's your name? Paul? Check this out Paul."</em> -->
       </div>
-      <button id="dislike">👹</button>
-      <button id="like">😍</button>
+      <!-- <button id="dislike">👹</button>
+      <button id="like">😍</button> -->
     </div>
-    <div id="match-area">
-      <h1>Matches</h3>
+    <div>
+      <h1 id="match-area">Matches</h1>
+      <div class="match-card">
+        <!-- <img src= "https://highclouds.org/wp-content/uploads/2019/03/girl-in-red-i-need-to-be-alone.png" height="100" width="100">
+        <p>Alexa</p>
+        <button id="match-info">i</button> -->
+      </div>
     </div>
-    
+  
+    <footer>  
+      <br><br><br><br><br><br><br><br><br>
+    </footer>
   </body>
 </html>
