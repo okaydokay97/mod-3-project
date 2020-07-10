@@ -14,7 +14,7 @@ const createAccountBttn = document.getElementById("create-account-submit")
 let currentUser = ""
 let potentials = []
 const otherPeople = []
-// const EventRende = [renderDeleteEvent]
+// const EventRender = [renderDeleteEvent]
 
 
 
