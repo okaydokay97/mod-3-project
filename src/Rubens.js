@@ -125,7 +125,6 @@ function fetchMatches(){
     .then(matchData => {
     findUser(matchData)
     })
-    `<button id="delete">delete</button>`
   }
 }
 
@@ -143,6 +142,10 @@ function findUser(matchData) {
         }
     }
   }
+
+
+  //delete btn for match deletion
+  //`<button id="delete">delete</button>`
 
   
 
