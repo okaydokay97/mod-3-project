@@ -14,6 +14,8 @@ const createAccountBttn = document.getElementById("create-account-submit")
 let currentUser = ""
 let potentials = []
 const otherPeople = []
+// const EventRende = [renderDeleteEvent]
+
 
 
 
@@ -123,6 +125,7 @@ function fetchMatches(){
     .then(matchData => {
     findUser(matchData)
     })
+    `<button id="delete">delete</button>`
   }
 }
 
@@ -140,6 +143,25 @@ function findUser(matchData) {
         }
     }
   }
+
+  
+
+
+//   function renderDeleteEvent() {
+//     const deleteButton = document.getElementsByClassName("delete")
+//     deleteButton.addEventListener("click", deleteMatch)
+// }
+
+  // function deleteMatch(event) {
+  //   const match = event.target.dataset.matchId 
+  //   const url = "http://localhost:3000/matches" + "/" + matchId 
+  //   fetch(url, {method: "delete"})
+  //   .then(resp => resp.json())
+  //   .then(json => fetchMatches())
+  // }
+  
+
+
 
 console.log(otherPeople)
   matchCard.style = "background-color:rgb(124, 255, 255)"
